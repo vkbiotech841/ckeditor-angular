@@ -1,6 +1,7 @@
-<!-- <ckeditor [editor]="Editor" data="<p>Hello, world!</p>"></ckeditor> -->
-<ckeditor [editor]="Editor" [(ngModel)]="data" [config]="{ toolbar: [ 'heading', '|', 'bold', 'italic' ] }">
+<ckeditor [(ngModel)]="data" [editor]="Editor"
+    [config]="{ toolbar: [ 'heading', '|', 'bold', 'italic', '|', 'link', 'blockQuote','|', 'bulletedList', 'numberedList', 'codeBlock', 'undo', 'redo' ] }">
 </ckeditor>
 
 
+<!-- Data binding with innerHTML:from component to template -->
 <div [innerHTML]="data"></div>
